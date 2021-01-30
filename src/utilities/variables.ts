@@ -9,9 +9,22 @@ const projects = {
         },
         'tags': [
             'featured',
-            'apps',
+            'app',
         ],
         'title': 'StatsDB Overlay',
+    },
+    'portfolio_website': {
+        'date': 'current',
+        'index': 'portfolio_website',
+        'image': '',
+        'links': {
+            'GitHub': 'https://github.com/TychoBrouwer/Portfolio',
+        },
+        'tags': [
+            'featured',
+            'website',
+        ],
+        'title': 'Portfolio Website',
     },
     'r6lookup_website': {
         'date': '29 December 2020',
@@ -126,11 +139,13 @@ const projects = {
 
 const projectTypes = {
     'featured': [
+        'statsdb_overlay',
         'aquazoo_leerdam',
-        'r6lookup_overlay',
+        'portfolio_website',
     ],
-    'workProjects': [
-        'r6lookup_overlay',
+    'freetimeProjects': [
+        'statsdb_overlay',
+        'portfolio_website',
         'r6lookup_website',
     ],
     'techProjects': [
@@ -144,13 +159,9 @@ const projectTypes = {
 
 const projectTypeNames = {
     'featured': 'Featured',
-    'workProjects': 'Free-Time Projects',
+    'freetimeProjects': 'Free-Time Projects',
     'techProjects': 'Technasium Projects',
 };
-
-const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
 
 const pages = {
     'about': {
@@ -159,16 +170,18 @@ const pages = {
             'title1': 'Fortes Lyceum, Gorinchem<br>Technasium jaar 4, 5 en 6',
             'title2': 'https://github.com/TychoBrouwer',
         },
-        'images': {
-
-        }
+        'images': {}
     }
-}
+};
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
 
 export {
     projects,
     projectTypes,
     projectTypeNames,
-    monthNames,
-    pages
+    pages,
+    monthNames
 }
