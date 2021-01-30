@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './src/public/index.ts',
+        index: './src/public/index.ts',
     },
     module: {
         rules: [
