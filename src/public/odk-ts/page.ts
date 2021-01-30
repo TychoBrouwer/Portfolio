@@ -7,14 +7,16 @@ export class Page {
     private pageTags: Array<string>;
     private pageContent: Object;
     private pageImages: Object;
+    private pageLinks: Object;
 
-    constructor(pageId: string, date: string, tags: Array<string>, content: Object, images: Object) {
+    constructor(pageId: string, date: string, tags: Array<string>, content: Object, images: Object, links: Object) {
         this.pageContainer = document.getElementById('mainContainer')!;
         this.pageId = pageId;
         this.pagedate = date;
         this.pageTags = tags;
         this.pageContent = content;
         this.pageImages = images;
+        this.pageLinks = links;
     }
 
     printPage() {
@@ -63,12 +65,25 @@ export class Page {
             }
         }
 
+        let pageLinks = '';
+
+        for (let title in this.pageLinks) {
+            if (this.pageLinks.hasOwnProperty(title)) {
+                const link = this.pageLinks[title];
+
+                pageLinks += `<p><strong>${title}: </strong><a href="${link}">${link}</a></p><br>`;
+            }
+        }
+
         this.pageContainer.innerHTML = `
         <h2 id="pageTitle">${this.pageId}</h2>
         <p id="pageDate">${this.pagedate}</p>
         <div id="pageTags">${tagHTML}</div>
         <div id="pageContent">
             ${pageContent}
+        </div>
+        <div id="pageLinks">
+            ${pageLinks}
         </div>
         `;
     }

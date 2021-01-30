@@ -31,7 +31,7 @@ export class ProjectClass {
     }
 
     printProjectPage() {
-        const page = new Page(this.project.title, this.project.date, this.project.tags, this.project.content, this.project.images);
+        const page = new Page(this.project.title, this.project.date, this.project.tags, this.project.content, this.project.images, this.project.links);
 
         page.printPage();
     }

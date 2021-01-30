@@ -5,7 +5,6 @@ const projects = {
         'image': '',
         'links': {
             'View': 'https://www.overwolf.com/app/StatsDB-StatsDB',
-            'GitHub': 'https://github.com/TychoBrouwer',
         },
         'tags': [
             'featured',
@@ -31,7 +30,7 @@ const projects = {
         'index': 'r6lookup_website',
         'image': '',
         'links': {
-            'GitHub': 'https://github.com/TychoBrouwer/R6Lookup',
+            'GitHub': 'https://github.com/TychoBrouwer/R6Lookup-Website',
         },
         'tags': [
             'website',
@@ -86,7 +85,9 @@ const projects = {
     'rolstoel_stappenteller': {
         'date': '13 December 2019',
         'index': 'rolstoel_stappenteller',
-        'links': {},
+        'links': {
+            'GitHub': 'https://github.com/TychoBrouwer/Rolstoel-Project',
+        },
         'tags': [
             'technasium',
         ],

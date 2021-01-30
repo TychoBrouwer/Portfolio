@@ -10,7 +10,7 @@ class Main {
 
     public async printPage(pageId): Promise < void > {
         return new Promise < void > (async (resolve) => {
-            const page = new Page(pageId, '', [], pages[pageId].content, pages[pageId].images);
+            const page = new Page(pageId, '', [], pages[pageId].content, pages[pageId].images, '');
 
             page.printPage();
 
