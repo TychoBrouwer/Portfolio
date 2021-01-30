@@ -1,0 +1,68 @@
+#mainContainer {
+    margin: 20px 0;
+    padding: 0 15%;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    #pageTitle {
+        margin: 30px 40px 0;
+        font-size: 36px;
+        letter-spacing: 0.2rem;
+        text-transform: capitalize;
+    }
+
+    #pageDate {
+        margin: 0 40px 20px;
+    }
+
+    #pageTags {
+        display: flex;
+
+        .tag {
+            margin: 0 5px;
+            padding: 3px 20px;
+            border-radius: 8px;
+            background: var(--very-dark-gray);
+
+            p {
+                text-transform: capitalize;
+            }
+        }
+
+        .featured {
+            background: var(--purple);
+            color: var(--very-dark-gray);
+        }
+
+        .app {
+            background: var(--blue);
+            color: var(--very-dark-gray);
+        }
+
+        .technasium {
+            background: var(--green);
+            color: var(--very-dark-gray);
+        }
+    }
+
+    #pageContent {
+        margin: 20px 0;
+
+        .pageAlinea {
+            padding: 10px 0;
+
+            h3 {
+                margin-top: 10px;
+            }
+
+            .alineaImage {
+                float: right;
+            }
+        }
+    }
+}

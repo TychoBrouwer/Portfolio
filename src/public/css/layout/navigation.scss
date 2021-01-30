@@ -1,0 +1,56 @@
+#nav {
+    font-size: 14px;
+    border-right: 2px solid var(--very-dark-gray);
+    background: var(--dark-gray);
+    max-width: 300px;
+
+    svg {
+        fill: var(--main-text);
+        stroke: var(--main-text);
+    }
+
+    #navTitle {
+        display: grid;
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+    #navContainer {
+        padding-left: 6px;
+
+        .navPage.active {
+            background: var(--gray);
+        }
+
+        .navObject {
+            .navTitle {
+                display: flex;
+                align-items: baseline;
+                cursor: pointer;
+                padding: 1px 0;
+
+                .navArrow {
+                    padding: 0 6px;
+                }
+
+                .navName {
+                    padding-left: 8px;
+                }
+            }
+
+            .navDropDownDiv {
+                display: none;
+
+                .navDropDown {
+                    padding-left: 30px;
+                }
+            }
+
+            &.active {
+                .navDropDownDiv {
+                    display: block;
+                }
+            }
+        }
+    }
+}
