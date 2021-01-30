@@ -12,8 +12,6 @@ class Main {
         return new Promise < void > (async (resolve) => {
             const page = new Page(pageId, '', [], pages[pageId].content, pages[pageId].images);
 
-            console.log(pageId);
-
             page.printPage();
 
             resolve();

@@ -206,7 +206,7 @@ const pages = {
         'content': {
             'title0': '119819@mymerewade.nl<br>tychobrouwer33@gmail.com',
             'title1': 'Fortes Lyceum, Gorinchem<br>Technasium jaar 4, 5 en 6',
-            'title2': 'https://github.com/TychoBrouwer',
+            'title2': '<strong>GitHub: </strong>https://github.com/TychoBrouwer',
         },
         'images': {}
     }
