@@ -71,7 +71,7 @@ export class Page {
             if (this.pageLinks.hasOwnProperty(title)) {
                 const link = this.pageLinks[title];
 
-                pageLinks += `<p><strong>${title}: </strong><a href="${link}">${link}</a></p><br>`;
+                pageLinks += `<a href="${link}" target="_blank"><strong>${title}</strong></a>`;
             }
         }
 

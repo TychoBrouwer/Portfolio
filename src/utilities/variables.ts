@@ -2,20 +2,31 @@ const projects = {
     'statsdb_overlay': {
         'date': 'current',
         'index': 'statsdb_overlay',
-        'image': '',
         'links': {
-            'View': 'https://www.overwolf.com/app/StatsDB-StatsDB',
+            'StatsDB App': 'https://www.overwolf.com/app/StatsDB-StatsDB',
+            'StatsDB Website': 'https://statsdb.net/',
+            'Overwolf': 'https://www.overwolf.com/',
+            'JocularMarrow': 'https://github.com/JocularMarrow',
         },
         'tags': [
             'featured',
             'app',
         ],
         'title': 'StatsDB Overlay',
+        'content': {
+            'title0': 'This is a project in colaboration with Overwolf. Overwolf is a framework that allows 3rd party developers to easily build gaming apps and overlays in HTML and JavaScript. The goal of this project is to create an intuitive and easy to use Rainbow Six Siege overlay to track and see player statistics ingame. This project I have teamed up with JocularMarrow.',
+            'Start': 'The project started after we had started on a statistics website for Rainbow Six Siege, after we had mostly finished the website we decided to submit an app proposal to Overwolf. Not a lot later we got approved and started working on the overlay. Later in 2020 we decided to scrap the website and team up with StatsDB. After that we focused solely on the overlay.',
+            'Code': 'This project I worked with HTML5, SCSS and TypeScript. SCSS was chosen for this project because it has an improved easier to interpret syntax compared to CSS3. And gives you the ability to easily import other style files. TypeScript was chosen for this project, because Overwolf has a sample project written in TypeScript. Other reasons for us to use TypeScript were, that it gives us the abbility to use Overwolfs TypeScript declaration file and early bug spotting during the compile stage.',
+            'App': 'Our goal was to make a highly customizable overlay which the user can customize to their own preferences. The features of the app include the abiliy to get the statistics of the players in your game lobby, the tracking of statistics such as daily and weekly K/D and Win/Loss ratios. Furthermore you can revisit your played games and see your performance round by round. In terms of customising the overlay you can change tho color theme and chose with statistics to show ingame on the overlay.',
+        },
+        'images': {
+            'title0': 'logo-overwolf',
+            'Code Language': 'logo-scss-typescript',
+        }
     },
     'portfolio_website': {
         'date': 'current',
         'index': 'portfolio_website',
-        'image': '',
         'links': {
             'GitHub': 'https://github.com/TychoBrouwer/Portfolio',
         },
@@ -28,7 +39,6 @@ const projects = {
     'r6lookup_website': {
         'date': '29 December 2020',
         'index': 'r6lookup_website',
-        'image': '',
         'links': {
             'GitHub': 'https://github.com/TychoBrouwer/R6Lookup-Website',
         },
