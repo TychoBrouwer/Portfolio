@@ -73,7 +73,7 @@ export class Page {
             if (this.pageLinks.hasOwnProperty(title)) {
                 const link = this.pageLinks[title];
 
-                pageLinks += `<a href="${link}" target="_blank"><strong>${title}</strong></a>`;
+                pageLinks += `<a href="${link}" rel="noreferrer" target="_blank"><strong>${title}</strong></a>`;
             }
         }
 
