@@ -4,15 +4,17 @@ export class Page {
     private pageContainer: HTMLElement;
     private pageId: string;
     private pagedate: string;
+    private pageDescription: string;
     private pageTags: Array<string>;
     private pageContent: Object;
     private pageImages: Object;
     private pageLinks: Object;
 
-    constructor(pageId: string, date: string, tags: Array<string>, content: Object, images: Object, links: Object) {
+    constructor(pageId: string, date: string, description: string, tags: Array<string>, content: Object, images: Object, links: Object) {
         this.pageContainer = document.getElementById('mainContainer')!;
         this.pageId = pageId;
         this.pagedate = date;
+        this.pageDescription = description;
         this.pageTags = tags;
         this.pageContent = content;
         this.pageImages = images;
@@ -80,6 +82,7 @@ export class Page {
         <p id="pageDate">${this.pagedate}</p>
         <div id="pageTags">${tagHTML}</div>
         <div id="pageContent">
+            <div class="pageAlinea description"><p>${this.pageDescription}</p></div>
             ${pageContent}
         </div>
         <div id="pageLinks">

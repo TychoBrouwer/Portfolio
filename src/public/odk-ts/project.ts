@@ -3,6 +3,7 @@ import { projects } from '../../utilities/variables';
 
 interface IProject {
     date: string,
+    description: string,
     index: string,
     image: string,
     links: {
@@ -31,7 +32,7 @@ export class ProjectClass {
     }
 
     printProjectPage() {
-        const page = new Page(this.project.title, this.project.date, this.project.tags, this.project.content, this.project.images, this.project.links);
+        const page = new Page(this.project.title, this.project.date, this.project.description, this.project.tags, this.project.content, this.project.images, this.project.links);
 
         page.printPage();
     }

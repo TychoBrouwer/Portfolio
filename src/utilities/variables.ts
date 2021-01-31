@@ -1,12 +1,12 @@
 const projects = {
     'statsdb_overlay': {
         'date': 'current',
+        'description': 'A Rainbow Six Siege ingame statistics overlay made in collaboration with Overwolf.',
         'index': 'statsdb_overlay',
         'links': {
             'StatsDB App': 'https://www.overwolf.com/app/StatsDB-StatsDB',
             'StatsDB Website': 'https://statsdb.net/',
             'Overwolf': 'https://www.overwolf.com/',
-            'JocularMarrow': 'https://github.com/JocularMarrow',
         },
         'tags': [
             'featured',
@@ -15,43 +15,57 @@ const projects = {
         'title': 'StatsDB Overlay',
         'content': {
             'title0': 'This is a project in colaboration with Overwolf. Overwolf is a framework that allows 3rd party developers to easily build gaming apps and overlays in HTML and JavaScript. The goal of this project is to create an intuitive and easy to use Rainbow Six Siege overlay to track and see player statistics ingame. This project I have teamed up with JocularMarrow.',
-            'Start': 'The project started after we had started on a statistics website for Rainbow Six Siege, after we had mostly finished the website we decided to submit an app proposal to Overwolf. Not a lot later we got approved and started working on the overlay. Later in 2020 we decided to scrap the website and team up with StatsDB. After that we focused solely on the overlay.',
+            'Startup': 'The project started after we had started on a statistics website for Rainbow Six Siege, after we had mostly finished the website we decided to submit an app proposal to Overwolf. Not a lot later we got approved and started working on the overlay. Later in 2020 we decided to scrap the website and team up with StatsDB. After that we focused solely on the overlay.',
             'Code': 'This project I worked with HTML5, SCSS and TypeScript. SCSS was chosen for this project because it has an improved easier to interpret syntax compared to CSS3. And gives you the ability to easily import other style files. TypeScript was chosen for this project, because Overwolf has a sample project written in TypeScript. Other reasons for us to use TypeScript were, that it gives us the abbility to use Overwolfs TypeScript declaration file and early bug spotting during the compile stage.',
             'App': 'Our goal was to make a highly customizable overlay which the user can customize to their own preferences. The features of the app include the abiliy to get the statistics of the players in your game lobby, the tracking of statistics such as daily and weekly K/D and Win/Loss ratios. Furthermore you can revisit your played games and see your performance round by round. In terms of customising the overlay you can change tho color theme and chose with statistics to show ingame on the overlay.',
         },
         'images': {
             'title0': 'logo-overwolf',
-            'Code Language': 'logo-scss-typescript',
+            'Code': 'logo-scss-typescript',
         }
     },
     'portfolio_website': {
         'date': 'current',
+        'description': 'My current portfolio website. Aka my coding sandbox for trying new programming languages and frameworks.',
         'index': 'portfolio_website',
         'links': {
-            'GitHub': 'https://github.com/TychoBrouwer/Portfolio',
+            'Portfolio GitHub': 'https://github.com/TychoBrouwer/Portfolio',
         },
         'tags': [
             'featured',
             'website',
         ],
         'title': 'Portfolio Website',
+        'content': {},
+        'images': {},
     },
     'r6lookup_website': {
         'date': '29 December 2020',
+        'description': 'A Rainbow Six Siege statistics website for searching your and your enemies game statistics.',
         'index': 'r6lookup_website',
         'links': {
-            'GitHub': 'https://github.com/TychoBrouwer/R6Lookup-Website',
+            'R6Lookup GitHub': 'https://github.com/TychoBrouwer/R6Lookup-Website',
+            'StatsDB Website': 'https://statsdb.net/',
         },
         'tags': [
             'website',
         ],
         'title': 'R6Lookup Website',
+        'content': {
+            'title0': 'This project originaly started as a small project to be able to check my own statistics and progression in Rainbow Six Siege. After I was unhappy with the currently available website that where serving the ability to check Rainbow Six Sieghe player statistics. After I while I started working on it with JocularMarrow. This was the begining of the accual website. The website is currently discontinued, because we decided to solely focus on de Overwolf overlay and work together with StatsDB.',
+            'Code': 'This project was my first experience with working with PHP. And my first mayor project using HTML5, JavaScript and SCSS. Because I was quite the beginner at coding I had to clean up the code a lot after I got better at working with PHP. If I would start over I would like to believe the project would have been a lot less complex and messy.',
+        },
+        'images': {
+            'title0': 'logo-r6lookup',
+            'Code': 'php-logo',
+        },
     },
     'aquazoo_leerdam': {
         'date': 'current',
+        'description': 'Een school project in opdracht van AquaZoo Leerdam om de aquariumlichten van een afstand te besturen.',
         'index': 'aquazoo_leerdam',
         'links': {
-            'GitHub': 'https://github.com/TychoBrouwer/AquaZoo-Leerdam',
+            'AquaZoo Project GitHub': 'https://github.com/TychoBrouwer/AquaZoo-Leerdam',
         },
         'tags': [
             'featured',
@@ -74,6 +88,7 @@ const projects = {
     },
     'b4_techniek_circulair': {
         'date': '30 June 2020',
+        'description': 'Een school onderzoek namens B4 Techniek naar de mogelijkheden voor B4 Techniek om een cirulaire leverancier te worden.',
         'index': 'b4_techniek_circulair',
         'links': {},
         'tags': [
@@ -94,9 +109,10 @@ const projects = {
     },
     'rolstoel_stappenteller': {
         'date': '13 December 2019',
+        'description': 'Een school project en onderzoek naar de mogelijkheden rond het fitness tracken van fysiek beperkte mensen.',
         'index': 'rolstoel_stappenteller',
         'links': {
-            'GitHub': 'https://github.com/TychoBrouwer/Rolstoel-Project',
+            'Rolstoel Project GitHub': 'https://github.com/TychoBrouwer/Rolstoel-Project',
         },
         'tags': [
             'technasium',
@@ -113,6 +129,7 @@ const projects = {
     },
     'plastic_soep': {
         'date': '23 September 2019',
+        'description': 'Een school project namens het bedrijf de Waardemakers om een kenniscentrum op te zetten op het gebied van plastics in Gorinchem.',
         'index': 'plastic_soep',
         'links': {},
         'tags': [
@@ -132,6 +149,7 @@ const projects = {
     },
     'b4_techniek_meubels': {
         'date': '24 June 2019',
+        'description': 'Een onderzoek met als doel om B4 Techniek advies te geven op het gebied van het verduurzamen van BiNaS-lokalen.',
         'index': 'b4_techniek_meubels',
         'links': {},
         'tags': [
@@ -151,6 +169,7 @@ const projects = {
     },
     'keuze_koffiebekers': {
         'date': '4 Februari 2019',
+        'description': 'Een onderzoek naar welk materiaal koffiebeker voor een bedrijf het meest milieuvriendelijkst zou zijn.',
         'index': 'keuze_koffiebekers',
         'links': {},
         'tags': [
@@ -168,6 +187,7 @@ const projects = {
     },
     'flexibele_woonvormen': {
         'date': '5 November 2018',
+        'description': 'Een project met als doel om een plan te maken voor flexibele woonvormen in de gemeente Gorinchem.',
         'index': 'flexibele_woonvormen',
         'links': {},
         'tags': [
@@ -217,7 +237,7 @@ const pages = {
         'content': {
             'title0': '119819@mymerewade.nl<br>tychobrouwer33@gmail.com',
             'title1': 'Fortes Lyceum, Gorinchem<br>Technasium jaar 4, 5 en 6',
-            'title2': '<strong>GitHub: </strong>https://github.com/TychoBrouwer',
+            'title2': '<strong>My GitHub: </strong>https://github.com/TychoBrouwer',
         },
         'images': {}
     }
